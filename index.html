@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高琨 · 教师·学者·独立创作者</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- 侧边菜单（移动端） -->
+    <aside class="sidebar" id="sidebar">
+        <button class="close-sidebar" id="closeSidebar">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav class="sidebar-nav">
+            <a href="#home" class="sidebar-link" data-scroll>首页</a>
+            <a href="#portfolio" class="sidebar-link" data-scroll>作品集</a>
+            <a href="#about" class="sidebar-link" data-scroll>关于我</a>
+            <a href="#contact" class="sidebar-link" data-scroll>联系我</a>
+        </nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- 顶部导航栏 -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="view-btn">view</a>
+                <nav class="nav-links">
+                    <a href="#home" class="nav-link" data-scroll>首页</a>
+                    <a href="#portfolio" class="nav-link" data-scroll>作品集</a>
+                    <a href="#about" class="nav-link" data-scroll>关于我</a>
+                    <a href="#contact" class="nav-link" data-scroll>联系我</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero 区 -->
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <img src="我的个人照片.jpg" alt="高琨个人照片" class="hero-bg-image">
+                <div class="hero-geometric"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="greeting" id="greeting">
+                        <span class="greeting-text">你好</span>
+                    </div>
+                    <h1 class="hero-title" id="heroTitle">
+                        <span class="title-text">高琨</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <h2>教师·学者·独立创作者</h2>
+                        <p>喜欢用跨学科的视角思考现实</p>
+                        <p>用未来审视现在</p>
+                        <p>热爱绘画</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品集区 -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="section-title">作品集</h2>
+                
+                <!-- 教学科研 -->
+                <div class="portfolio-section">
+                    <div class="section-header">
+                        <i class="fas fa-chalkboard-teacher section-icon"></i>
+                        <h3 class="section-subtitle">教学科研</h3>
+                    </div>
+                    <div class="cards-grid">
+                        <!-- 卡片 1 -->
+                        <article class="card">
+                            <div class="card-content">
+                                <h4 class="card-title">主讲《绿色建筑概论》</h4>
+                                <p class="card-desc">淄博职业技术大学 · 工程造价专业课程</p>
+                                <a href="#project1" class="card-link" data-modal>查看详情</a>
+                            </div>
+                        </article>
+                        <!-- 卡片 2 -->
+                        <article class="card">
+                            <div class="card-content">
+                                <h4 class="card-title">主持山东省高等学校哲学社会科学面上项目</h4>
+                                <p class="card-desc">课题名称：《“母亲河”情感认同下乡愁景观融入黄河国家文化公园（山东段）的路径研究》</p>
+                                <a href="#project2" class="card-link" data-modal>查看详情</a>
+                            </div>
+                        </article>
+                        <!-- 卡片 3 -->
+                        <article class="card">
+                            <div class="card-content">
+                                <h4 class="card-title">主持九三学社山东省委员会参政议政常规课题</h4>
+                                <p class="card-desc">课题名称：《关于进一步加强我省工业遗产整合利用的建议》</p>
+                                <a href="#project3" class="card-link" data-modal>查看详情</a>
+                            </div>
+                        </article>
+                        <!-- 卡片 4 -->
+                        <article class="card">
+                            <div class="card-content">
+                                <h4 class="card-title">主持淄博市社会科学规划研究项目</h4>
+                                <p class="card-desc">课题名称：《从工业遗存到城市文脉：淄博市“碎片化”工业遗产的叙事性设计研究》</p>
+                                <a href="#project4" class="card-link" data-modal>查看详情</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- 社会服务 -->
+                <div class="portfolio-section">
+                    <div class="section-header">
+                        <i class="fas fa-hands-helping section-icon"></i>
+                        <h3 class="section-subtitle">社会服务</h3>
+                    </div>
+                    <div class="services-list">
+                        <div class="service-item">注册城乡规划师</div>
+                        <div class="service-item">山东省科技专家库专家</div>
+                        <div class="service-item">九三学社淄博市委员会农业专委会委员</div>
+                        <div class="service-item">淄博市教育督导员</div>
+                        <div class="service-item">淄博市美学讲师团讲师</div>
+                        <div class="service-item">导游</div>
+                    </div>
+                </div>
+
+                <!-- 小画生活 -->
+                <div class="portfolio-section">
+                    <div class="section-header">
+                        <i class="fas fa-palette section-icon"></i>
+                        <h3 class="section-subtitle">小画生活</h3>
+                    </div>
+                    <div class="paintings-grid">
+                        <figure class="painting">
+                            <img src="1.音乐的节奏之一.jpg" alt="音乐的节奏之一">
+                            <figcaption>
+                                音乐的节奏之一
+                                <button class="view-full-btn" data-image="1.音乐的节奏之一.jpg">查看全图</button>
+                            </figcaption>
+                        </figure>
+                        <figure class="painting">
+                            <img src="2.音乐的节奏之二.jpg" alt="音乐的节奏之二">
+                            <figcaption>
+                                音乐的节奏之二
+                                <button class="view-full-btn" data-image="2.音乐的节奏之二.jpg">查看全图</button>
+                            </figcaption>
+                        </figure>
+                        <figure class="painting">
+                            <img src="3.夏天穿搭.jpg" alt="夏天穿搭">
+                            <figcaption>
+                                夏天穿搭
+                                <button class="view-full-btn" data-image="3.夏天穿搭.jpg">查看全图</button>
+                            </figcaption>
+                        </figure>
+                        <figure class="painting">
+                            <img src="4.专注还是被吸走？.jpg" alt="专注还是被吸走？">
+                            <figcaption>
+                                专注还是被吸走？
+                                <button class="view-full-btn" data-image="4.专注还是被吸走？.jpg">查看全图</button>
+                            </figcaption>
+                        </figure>
+                        <figure class="painting">
+                            <img src="5.冬之穿搭.jpg" alt="冬之穿搭">
+                            <figcaption>
+                                冬之穿搭
+                                <button class="view-full-btn" data-image="5.冬之穿搭.jpg">查看全图</button>
+                            </figcaption>
+                        </figure>
+                        <figure class="painting">
+                            <img src="6.就差一把胡椒面.jpg" alt="就差一把胡椒面">
+                            <figcaption>
+                                就差一把胡椒面
+                                <button class="view-full-btn" data-image="6.就差一把胡椒面.jpg">查看全图</button>
+                            </figcaption>
+                        </figure>
+                        <figure class="painting">
+                            <img src="7.姜的倔强.jpg" alt="姜的倔强">
+                            <figcaption>
+                                姜的倔强
+                                <button class="view-full-btn" data-image="7.姜的倔强.jpg">查看全图</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于我 -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">关于我</h2>
+                <div class="about-content">
+                    <p>我是高琨，淄博职业技术大学教师，喜欢用跨学科的视角思考现实，用未来审视现在，做有趣有用的研究，画有触动的生活。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系我 -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">联系我</h2>
+                <div class="contact-content">
+                    <div class="email-list">
+                        <a href="mailto:200511gaokun@163.com">200511gaokun@163.com</a>
+                        <a href="mailto:10926081@pku.org.cn">10926081@pku.org.cn</a>
+                    </div>
+                    <p class="contact-desc">接受社会服务项目合作、论文约稿、小画创作</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 高琨 · 保留所有权利</p>
+        </div>
+    </footer>
+
+    <!-- 模态框（项目详情） -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- 动态内容 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 画作全图模态框 -->
+    <div class="painting-modal" id="paintingModal">
+        <div class="painting-modal-content">
+            <button class="close-painting-modal" id="closePaintingModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="painting-modal-body">
+                <img id="fullPaintingImage" src="" alt="全图画作">
+                <p id="fullPaintingTitle"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
